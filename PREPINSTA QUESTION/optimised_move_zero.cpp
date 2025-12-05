@@ -3,27 +3,18 @@ using namespace std;
 
 int main(){
     vector<int> arr={4,5,0,1,9,0,5,0,7,0};
-    int sizee=arr.size();
+    int n=arr.size();
 
-    int i=arr[0];
-    int j=arr[0];
-
-    for(int k=0;i<sizee;i++){
-        if(arr[k] != 0){
-            i++;
-        }
-        j=i+1;
-
-        if(arr[j] !=0){
+    int j=0;
+    for(int i=0;i<n;i++){
+        if(arr[i] != 0 ){
             swap(arr[i],arr[j]);
-            i++;
+            j++;
         }
-        j++;
     }
 
-    for(int l=0;l<arr.size();l++){
-        cout<<arr[l]<<",";
+    for(int j=0;j<n;j++){
+        cout<<arr[j]<<",";
     }
-
     return 0;
 }
