@@ -3,7 +3,9 @@
 using namespace std;
 
 int main(){
-    string str="bbbaaababa";
+    string str="";
+    cout<<"Enter a string"<<endl;
+    cin>>str;
     int n=str.length();
     int L=4;
     vector<string> boxes;
