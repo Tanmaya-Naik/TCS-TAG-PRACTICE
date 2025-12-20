@@ -37,16 +37,10 @@ int main(){
         }
     }
 
-    int finalcount=0;
-
-    for(char ch:maxbox){
-        if(ch=='a'){
-            finalcount++;
-        }
-    }
+    
 
     cout<<"The final box which contain maximun a is: "<<maxbox<<endl;
-    cout<<"The number of a present in the maxbox is: "<<finalcount<<endl;
+    cout<<"The number of a present in the maxbox is: "<<maxcnt<<endl;
 
 
 
