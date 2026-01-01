@@ -2,33 +2,30 @@
 using namespace std;
 
 vector<int> findrepeating_missing(vector<int> nums){
-    int repeting=-1;
-    int missing=-1;
-
     int n=nums.size();
-    for(int i=1;i<=n;i++){
-        int counter=0;
-        for(int j=0;j<n;j++){
-            if(nums[j]==i){
-                counter++;
-            }
-        }
+    int hash[n+1]={0};
 
-        if(counter == 2){
+    for(int i=0;i<n;i++){
+        hash[nums[i]]++;
+    }
+
+    int repeting=0;
+    int missing=0;
+
+    for(int i=0;i<n;i++){
+        if(hash[i]==2){
             repeting=i;
-        }else if(counter==0){
+        }
+        else if(hash[i]==0){
             missing=i;
         }
-  
-         if(repeting != -1 && missing!=-1){
-         break;
-    }
-        
+
+        if(repeting!=0 && missing!=0){
+            break;
+        }
     }
 
     return {repeting,missing};
-
-   
 }
 
 int main(){
