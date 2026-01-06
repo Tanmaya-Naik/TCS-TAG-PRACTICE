@@ -1,6 +1,6 @@
 # 🧠 TCS NQT AND TAG Preparation Repository
 
-This repository contains my **structured preparation for TCS NQT**, covering all major sections required to perform well in the exam.
+This repository contains my **structured preparation for TCS NQT AND TAG**, covering all major sections required to perform well in the exam.
 
 The focus is on **clarity, consistency, and exam-oriented practice**, not random question hoarding.
 
