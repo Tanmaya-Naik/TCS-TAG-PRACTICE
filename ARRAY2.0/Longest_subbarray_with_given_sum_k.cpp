@@ -44,7 +44,7 @@
 
 
 
-            //OPTIMISED SLIDING WINDOW
+            //OPTIMISED SLIDING WINDOW  ///REMEMBER USE ONLY IF THE ARRAY HAVE ONLY POSITIVE VALUE
 #include <iostream>
 #include <vector>
 using namespace std;
